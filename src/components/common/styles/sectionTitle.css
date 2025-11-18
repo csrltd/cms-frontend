@@ -1,0 +1,21 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #0C7A3E;
+}
+
+.section-title .bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #0C7A3E;
+  border-radius: 50%;
+}
+
+.section-title h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  margin: 0;
+  padding: 5px 0px;
+}

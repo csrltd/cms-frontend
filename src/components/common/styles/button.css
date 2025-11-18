@@ -1,0 +1,16 @@
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--color-white);
+  padding: 16px 69px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

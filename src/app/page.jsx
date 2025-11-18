@@ -1,8 +1,28 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import Button from "@/components/common/Button";
+import ContactSection from "@/components/common/ContactSection";
+import { Footer } from "@/components/common/Footer";
+import Header from "@/components/common/Header";
+import SectionTitle from "@/components/common/SectionTitle";
 
 export default function Home() {
+
+function greetings(){
+    alert("Hello, welcome to our CMS!");
+  }
+  
   return (
-    <h1>Weeeeee</h1>
+    <>
+      <Button text="Get Started" onclick={greetings}/>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Header />
+      <SectionTitle text="Our Services" />
+      <ContactSection />
+      <Footer />
+    </>
+
   );
 }
