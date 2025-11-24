@@ -2,6 +2,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --btn-bg: #0C7A3E;
+  --color-white: #ffffff;
   --primarycolor: #0C7A3E;
   --secondary: #64B3A1;
   --primary-shade-1: #F5FFFA;
@@ -35,6 +37,16 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--color-white);
+  padding: 16px 69px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
 h1{
   font-size: 56px;
   font-weight: bold;
