@@ -14,13 +14,19 @@ function greetings(){
   
   return (
     <>
-      <Button text="Get Started" onclick={greetings}/>
+      {/* <Button text="Get Started" onclick={greetings}/>
       <br></br>
       <br></br>
       <br></br>
-      <Header />
+      
       <SectionTitle text="Our Services" />
+       */}
+      <Header />
+      <br></br>
+      <br></br>
       <ContactSection />
+      <br></br>
+      <br></br>
       <Footer />
     </>
 
