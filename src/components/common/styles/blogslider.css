@@ -1,0 +1,107 @@
+.blogsection{
+  background-color: #FBFBFB;
+  width: 100vw;
+  align-items: center;
+  justify-items: center;
+
+}
+.blogcontainer{
+  padding-block: 80px;
+  display: flex;
+  gap: 32;
+  flex-direction: column;
+  background-color: #FBFBFB;
+  align-items: center;
+}
+.blogsectionheader{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  width: 498px;
+}
+
+.slider{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 1336px;
+}
+.blogcard{
+  display: flex;
+  gap:36;
+  background-color: white;
+  padding: 40px;
+  align-items: center;
+}
+.blogimage{
+  width: 610px;
+  height: 394px;
+  background-color: #64B3A1;
+  overflow: hidden;
+display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.blogcontent{
+  display: flex;
+  flex-direction:column ;
+  gap: 24px;
+  justify-content: space-between;
+  height: 344px;
+  
+
+}
+.blogtexts{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 610px;
+}
+.button{
+  padding-block: 16px;
+  padding-inline: 32px;
+  width: fit-content;
+  background-color:#64B3A1;
+  border: none;
+  font-size: 16px;
+}
+.slideraction{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+
+}
+.ts-dots{
+  display: flex;
+  gap: 16px;
+}
+
+.ts-slide-active{
+  width: 36px;
+  height: 8px;
+  background-color: #0C7A3E;
+}
+.ts-slide{
+  width: 36px;
+  height: 8px;
+  background-color:#aa2a2a ;
+
+}
+.ts-dot{
+  width: 36px;
+  height: 8px;
+  background-color:#EDEDED ;
+
+}
+.ts-dot-active{
+  width: 36px;
+  height: 8px;
+  background-color: #0C7A3E;
+}
+
+
