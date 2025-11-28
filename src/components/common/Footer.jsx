@@ -73,7 +73,7 @@ export const Footer = () => {
         <div className="copyright">
           <p>{currentYear} Copyright, All rights reserved.</p>
         </div>
-        </div>
+      </div>
     </footer>
   )
 }
