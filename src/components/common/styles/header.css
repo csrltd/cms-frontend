@@ -1,16 +1,40 @@
 .header {
-  width: 100%;
-  padding: 16px 32px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding-block: 24px  ;
+ background-color: #ffffff;
+ z-index: 100;
+ position: fixed;
+ width: 100vw;
+
+}
+.header-container{
+  width: 1336px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
-  position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
 }
 
+.navlinks{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.header Button {
+  width: fit-content;
+  padding: 16px 40px ;
+}
+
+.header .button {
+  width: fit-content;
+  padding: 16px 8px;
+  background-color: antiquewhite;
+}
 .header-logo img {
   height: 50px;
   width: auto;
@@ -20,7 +44,7 @@
 
 .nav-links {
   display: flex;
-  gap: 32px;
+  gap: 320px;
   align-items: center;
 }
 

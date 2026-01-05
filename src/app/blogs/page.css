@@ -1,0 +1,150 @@
+.blog-container {
+  max-width: 1336px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16PX;
+  align-items: center;
+ 
+}
+.latest-post {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: start;
+}
+
+.latest-post-card {
+  display: flex;
+  flex-direction: column;
+  gap: -25px;
+  align-items: center;
+  background: #fff;
+
+}
+.latest-post-image {
+  width: 1334px;
+  height: 568px;
+  overflow: hidden;
+  margin-bottom: -180px;
+}
+.latest-post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latest-content {
+ display: flex ;
+ flex-direction: column;
+  padding: 40px ;
+  width: 965px;
+  gap: 16px;
+  background-color: white;
+
+}
+.latest-content button {
+  width: fit-content;
+}
+.read-btn {
+  background: #0d7a3d;
+  color: white;
+  padding: 10px 22px;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+.more-posts {
+display: flex;
+flex-direction: column;
+gap: 16px;
+
+}
+.categories {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.categories button {
+  border: 1px solid #ccc;
+  padding: 12px 32px;
+  cursor: pointer;
+  background: #fff;
+}
+
+    
+
+.categories .active {
+  background: #0d7a3d;
+  color: #fff;
+  border-color: #0d7a3d;
+  font-size: 16px;    
+}
+
+.posts-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.post-card {
+  background: #fff;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.post-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+
+.post-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-desc {
+  color: #666;
+}
+
+.post-read {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0d7a3d;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 35px;
+  display: flex;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.active-page {
+  background: #0d7a3d !important;
+  color: #fff !important;
+  border-color: #0d7a3d !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .latest-post-card {
+    grid-template-columns: 1fr;
+  }
+}

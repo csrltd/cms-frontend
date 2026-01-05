@@ -1,5 +1,7 @@
 import {Work_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/common/Header";
+import { Footer } from "@/components/common/Footer";
 
 const geistSans = Work_Sans({
   variable: "--font-geist-sans",
@@ -16,7 +18,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

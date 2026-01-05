@@ -1,13 +1,21 @@
 .footer {
   width: 100%;
-  padding: 60px 80px;
-  background: #ffffff;
   display: flex;
-  gap: 40px;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer .contact-logo {
+.footer-container {
+  width: 1336px;
+  max-width: 1440px;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 80px;
+  overflow: hidden;
+
+}
+
+.contact-logo {
   background-color: #fcfafa;
   width: 100%;
   padding: 51px 32px;
@@ -19,7 +27,7 @@
   flex: 1;
 }
 
-.footer .contact-logo h1 {
+.contact-logo h1 {
   font-size: 24px;
   font-weight: 500;
   margin: 0;
@@ -27,7 +35,7 @@
   color: #111;
 }
 
-.footer .second-col {
+.second-col {
   flex: 2;
   min-width: 0; 
   display: flex;
@@ -35,26 +43,27 @@
   gap: 16px;
 }
 
-.footer .links-contact {
+.links-contact {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
-.footer .links-and-contacts {
+.links-and-contacts {
   background-color: #fcfafa;
   padding: 40px 50px;
   border-radius: 8px;
   flex: 2;
   display: flex;
-  gap: 100px;
+  gap: 16px;
   align-items: flex-start;
   flex-shrink: 1; 
   min-width: 0;
 }
 
 .quick-links,
+
 .contacts {
   flex: 1;
   display: flex;
@@ -157,51 +166,38 @@
   color: #0D0D0D;
 }
 
-@media (min-width: 1025px) and (max-width: 1370px) {
+@media (min-width: 768px) and (max-width: 1012px) {
   .footer .links-and-contacts {
     gap: 40px;
   }
+  .footer-container {
+  display: flex;
+  flex-direction: column  ;
+  width: 100vw;
+  padding-inline: 32px ;
+  }
+
+
+
+
+
+
+
 }
 
-@media (max-width: 1024px) {
-  .footer {
-    flex-direction: column;
-    padding: 15px 31px;
-    gap: 28px;
-  }
 
-  .footer .contact-logo {
-    width: 100%;
-    align-items: flex-start;
-    text-align: center;
-  }
 
-  .footer .second-col {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .footer .links-contact {
-    flex-direction: row;
-    gap: 16px;
-  }
-
-  .footer .links-and-contacts {
-    flex-direction: row;
-    gap: 60px;
-    padding: 40px;
-    justify-content: center;
-  }
-
-  .socials {
-    padding: 40px;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 390px) {
   .footer {
     padding: 40px 20px;
     gap: 24px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 0;
+    gap: 24px;
+    width: 100%;
   }
 
   .footer .contact-logo {

@@ -9,14 +9,15 @@ export const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="contact-logo">
+      <div className="footer-container"> 
+         <div className="contact-logo">
           <Image 
             src="/images/CMS-logo-green.svg" 
             alt="CMS Logo" 
             width={182} 
             height={55} 
           />
-          <h1>We are ready to serve you</h1>
+          <h2 >We are ready to serve you</h2>
           <Button text="Contact Us" />
       </div>
       <div className="second-col">
@@ -26,7 +27,7 @@ export const Footer = () => {
               <p className="contact-paragraph">Quick Links</p>
               <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Blogs</a></li>
               </ul>
@@ -74,6 +75,9 @@ export const Footer = () => {
           <p>{currentYear} Copyright, All rights reserved.</p>
         </div>
       </div>
+        </div>
+     
+
     </footer>
   )
 }

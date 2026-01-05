@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 1336px;
+  width:fit-content;
 }
 .blogcard{
   display: flex;
@@ -35,16 +35,22 @@
   background-color: white;
   padding: 40px;
   align-items: center;
+  height: 394px;
 }
 .blogimage{
   width: 610px;
-  height: 394px;
+  height: 344;
   background-color: #64B3A1;
   overflow: hidden;
-display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;   
+}
 
+.blogimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .blogcontent{
   display: flex;
@@ -105,3 +111,48 @@ display: flex;
 }
 
 
+@media screen and (max-width: 480px){
+  .slider{
+    width: 100%;
+  }
+  .blogcard{
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+  .blogimage{
+    width: 100%;
+    height: auto;
+  }
+  .blogcontent{
+    height: auto;
+    width: 100%;
+  }
+  .blogtexts{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .slider{
+    width: 100%;
+  }
+  .blogcard{
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+  .blogimage{
+    width: 100%;
+    height: auto;
+  }
+  .blogcontent{
+    height: auto;
+    width: 100%;
+  }
+  .blogtexts{
+    width: 100%;
+  }
+  
+}
+  

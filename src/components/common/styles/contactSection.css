@@ -1,4 +1,14 @@
 .contact-section {
+  display: flex;
+  align-items: center;
+  
+}
+/* .inputlabels {
+  font-size: 16px;
+  margin-bottom: 6px;
+} */
+
+.contact-container{
   width: 100%;
   padding: 40px 80px;
   display: flex;
@@ -6,25 +16,52 @@
   gap: 40px;
 }
 
+
 .contact-top {
   display: flex;
   gap: 40px;
+  padding-block: 56px;
+
 }
 
 .contact-image img {
   border-radius: 8px;
-  width: 100%;
+  width: 648px;
   height: auto;
 }
 
 .contact-form {
+  width: 648px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 24px;
+}
+.contact-form  label {
+  font-size: 16px;
+  margin-bottom: 6px;
 }
 
+.contact-form textarea {
+  padding: 12px 14px;
+  border: none;
+  background-color: #F5F5F5;
+  border-radius:0;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+.contact-form input {
+  padding: 16px 16px;
+  border: none;
+  background-color: #F5F5F5;
+  border-radius:0;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
 .form-title {
   color: #0C7A3E;
   font-weight: 600;
@@ -66,7 +103,7 @@ textarea {
   padding: 12px 14px;
   border: none;
   background-color: #F5F5F5;
-  border-radius: 6px;
+  border-radius:0;
   font-size: 14px;
   width: 100%;
   outline: none;
@@ -85,18 +122,19 @@ textarea {
 }
 
 .bottom-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr );
+   gap: 16px;
+   width: fill;
+
 }
 
 .info-card {
   flex: 1;
   padding: 24px;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
 }
 
 .info-card .icon {
@@ -104,7 +142,7 @@ textarea {
   padding: 16px;
   display: inline-block;
   margin-bottom: 12px;
-  border-radius: 50%;
+  border-radius: 0;
 }
 
 .info-card h4 {
@@ -133,18 +171,22 @@ textarea {
   }
 
   .bottom-info {
-    flex-direction: column;
-    gap: 20px;
-  }
+   display: grid;
+   grid-template-columns: repeat(2,1fr );
+   gap: 16px;
+   width: fill;
+}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 390px) {
   .contact-section {
     padding: 20px;
+    width: 100vw;
   }
 
   .form-heading {
     font-size: 18px;
+    width: 100vw;
   }
 
   .form-row {
@@ -161,4 +203,11 @@ textarea {
   .contact-btn {
     padding: 12px 0;
   }
+
+   .bottom-info {
+   display: grid;
+   grid-template-columns: 1fr ;
+   gap: 16px;
+   width: 340px;
+}
 }

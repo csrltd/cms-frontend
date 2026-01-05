@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  gap: 32px;
+  gap:0px;
 }
 .testimonialcard{
   display: flex;
@@ -34,6 +34,9 @@
   padding:56px;
   background-color: white;
   text-align: center;
+  height: 320px;
+  justify-content: center;
+
 }
 .testimonialside{
   opacity: 0.5;

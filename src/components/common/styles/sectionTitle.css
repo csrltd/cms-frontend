@@ -3,14 +3,19 @@
   align-items: center;
   gap: 12px;
   color: #0C7A3E;
+  padding: 8px 16px;
+  background-color:#F5FFFA ;
+  width: fit-content;
+  height: fit-content;
 }
 
-.section-title .bullet {
-  width: 12px;
-  height: 12px;
+.bullet {
+  width: 10px;
+  height: 10px;
   background-color: #0C7A3E;
   border-radius: 50%;
 }
+
 
 .section-title h2 {
   font-size: 18px;

@@ -17,22 +17,22 @@
 .landingpage {
   justify-items: center;
 }
-.navbarsection {
-  height: 90px;
-  width: 100vw;
-  background-color: #64b3a1;
-}
+
+
 .herosection {
   background-color: #fbfbfb;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   align-items: center;
   justify-items: center;
+  overflow: hidden;
+
 }
 .herocontainer {
   justify-items: center;
   align-items: center;
-  height: fill;
+  padding-top: 80px;
+  height: 100%;
   width: 1336px;
   display: flex;
   gap: 144;
@@ -46,30 +46,43 @@
   align-content: center;
 }
 .overlay-1 {
-  background: linear-gradient(0deg, transparent 62%, #ffffff 100%);
+  background: linear-gradient(0deg, transparent 62%, #fbfbfb 100%);
   width: 700;
   position: absolute;
-  height: 200px;
+  top: 0;
+  height: 400px;
   justify-self: center;
   align-self: top;
+
+
 }
 .overlay-2 {
-  background: linear-gradient(0deg, #ffffff 0%, transparent 29%);
+  background: linear-gradient(0deg,  0%, transparent 62%);
   width: 700;
   position: absolute;
   height: 200px;
   align-self: last baseline;
+
+ bottom: 0;
 }
 
 .heroright {
   display: flex;
   gap: 16px;
   width: 628px;
-  height: 892px;
+  height: fill;
+  position: relative;
 }
+
+.herocontainer Button {
+  width: fit-content;
+  padding: 16px 80px ;
+}
+
+
 .photosleft {
   width: 305px;
-  height: fit-content;
+  height: fill;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -78,7 +91,7 @@
 }
 .photosright {
   width: 306px;
-  height: fit-content;
+  height: fill;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +101,7 @@
 
 .heroimage1 {
   width: 306px;
-  height: 438px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -96,26 +109,50 @@
   background-color: #64b3a1;
 }
 
+.heroimage1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .heroimage2 {
   background-color: antiquewhite;
   width: 306px;
-  height: 438px;
+  height: 100%;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
+
+.heroimage2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .heroimage3 {
   width: 306px;
-  height: 286px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   background-color: #0c7a3e;
 }
+.heroimage3 img{ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroimage3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .heroimage4 {
   width: 305px;
-  height: 286px;
+  height: 100%;
   background-color: #0c7a3e;
 
   display: flex;
@@ -123,15 +160,28 @@
   align-items: center;
   overflow: hidden;
 }
+
+.heroimage4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .heroimage5 {
   width: 306px;
-  height: 286px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   background-color: violet;
 }
+
+.heroimage5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .aboutus {
   background-color: #ffffff;
   width: 100vw;
@@ -188,32 +238,38 @@
 .ourmission {
   background-color: #64b3a1;
   display: flex;
-  justify-content: space-between;
-  width: 1336px;
+  width: fit-content;
   align-items: center;
   padding: 40px;
+  gap: 72px;
 }
 
 .ourmissioncontent {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 546px;
+  width: 568px;
   height: fit-content;
 }
 .ourmissionimage {
-  width: 568px;
+  width: 616px;
   height: 310px;
   background-color: #fafafa;
   align-content: center;
   overflow: hidden;
 }
+.ourmissionimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .corevalues {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   padding: 40px;
-  width: 1336px;
+  width: 1336px ;
   gap: 24px;
 }
 
@@ -244,6 +300,9 @@
   width: 80px;
   height: 88px;
   background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .valueparagraph {
   color: #8d8d8d;
@@ -277,13 +336,21 @@
   width: 640px;
   height: 340px;
   overflow: hidden;
+
 }
+.whychooseusimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;}
+
 .keybenefits {
   width: 658px;
-}
-.benefitcontent {
   display: grid;
   grid-template-columns: 1fr;
+}
+.benefitcontent {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
   border-left: 4px solid #0c7a3e;
   padding-inline: 40px;
@@ -345,15 +412,26 @@
   background-color: white;
   align-items: center;
 }
-.serviceimage-1 {
+.serviceimage-1{
   width: 282px;
   height: 296px;
   background-color: #f5f5f5;
+}
+.serviceimage-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .serviceimage-2 {
   width: 550;
   height: 184;
   background-color: #e2e2e2;
+}
+
+.serviceimage-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .servicecontent {
@@ -421,41 +499,7 @@
   width: fit-content;
   font-size: 18px;
 }
-/* .testimonialssection{
-  background-color: #FBFBFB;
-  width: 100vw;
-  align-items: center;
-  justify-items: center;
-}
-.testimonialscontainer{
-  background-color: #FAFAFA ;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  width: 1336px;
-  padding-block: 80;
-  
-  
-}
-.testimonialscoursels{
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  gap: 32px;
-}
-.testimonialcard{
-  display: flex;
-  flex-direction: column;
-  width: 682px;
-  gap:24px;
-  padding:56px;
-  background-color: white;
-  text-align: center;
-
-} */
 .contactuscontainer {
   background-color: #dcdcdc;
   height: 700px;
@@ -513,18 +557,7 @@
     align-items: center;
     text-align: center;
   }
-  .overlay-1 {
-    width: 700;
-    position: absolute;
-    height: 200px;
-    justify-self: center;
-    align-self: top;
-  }
-  .overlay-2 {
-    position: absolute;
-    height: px;
-    align-self: last baseline;
-  }
+  
 
   .heroright {
     display: flex;
@@ -569,7 +602,7 @@
     align-items: center;
     overflow: hidden;
   }
-  .heroimage3 {
+  .heroimage3{
     width: 164px;
     height: 151px;
     display: flex;
@@ -596,7 +629,9 @@
     align-items: center;
     overflow: hidden;
     background-color: violet;
+ 
   }
+  
   .aboutus {
     background-color: #ffffff;
     width: 100vw;
@@ -622,6 +657,11 @@
     height: 438px;
     overflow: hidden;
     position: relative;
+  }
+  .aboutimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .ourvision {
     position: absolute;
@@ -655,11 +695,9 @@
     background-color: #64b3a1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 340px;
+    width: 340px !important;
     align-items: center;
-    padding: 40px;
-
+    padding: 24px;
     gap: 26px;
   }
 
@@ -670,7 +708,7 @@
     width: 296px;
     height: fit-content;
   }
-  .ourmissionimage {
+  .ourmissionimage{
     width: 296px;
     height: 264px;
     background-color: #fafafa;
@@ -683,7 +721,7 @@
     background-color: #ffffff;
     align-items: center;
     padding: 40px;
-    width: 340px !important;
+    width: 340px ;
     gap: 24px;
   }
 
@@ -753,7 +791,10 @@
     overflow: hidden;
   }
   .keybenefits {
-    width: 340px;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    width: 340;
   }
   .benefitcontent {
     display: flex;
@@ -772,84 +813,6 @@
     padding-block: 16px;
   }
 
-  .blogsection {
-    background-color: #fbfbfb;
-    width: 100vw;
-    align-items: center;
-    justify-items: center;
-  }
-  .blogcontainer {
-    padding-block: 40px;
-    display: flex;
-    gap: 32;
-    flex-direction: column;
-    background-color: #fbfbfb;
-    align-items: center;
-  }
-  .blogsectionheader {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-    width: 340px;
-  }
-
-  .slider {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 340px;
-  }
-  .blogcard {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    background-color: white;
-    padding: 16px;
-    align-items: center;
-  }
-  .blogimage {
-    width: 308px;
-    height: 214px;
-    background-color: #64b3a1;
-  }
-  .blogcontent {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 308px;
-  }
-  .button {
-    padding-block: 16px;
-    padding-inline: 32px;
-    width: fit-content;
-    background-color: #64b3a1;
-    border: none;
-    font-size: 16px;
-  }
-  .slideraction {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    justify-content: space-between;
-  }
-  .slides {
-    display: flex;
-    gap: 16px;
-  }
-
-  .slideactive {
-    width: 36px;
-    height: 8px;
-    background-color: #0c7a3e;
-  }
-  .slide {
-    width: 36px;
-    height: 8px;
-    background-color: #ededed;
-  }
   .servicessection {
     background-color: #fbfbfb;
     width: 100vw;
@@ -897,21 +860,22 @@
     padding: 16px !important;
     gap: 24px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     width: 340px !important;
-    height: fit-content;
+    height: fit-content !important;
     background-color: white;
     align-items: center;
   }
   .serviceimage-1 {
-    width: 100% !important;
-    height: 296px !important;
+    width: 306px ;
+    height: 296px ;
     background-color: #f5f5f5;
   }
   .serviceimage-2 {
-    width: 100% !important;
+    width: 162px ;
     height: 296px;
     background-color: #f2f2f2;
+
   }
 
   .servicecontent {
@@ -980,58 +944,10 @@
     width: fit-content;
     font-size: 18px;
   }
-  .testimonialssection {
-    background-color: #fbfbfb;
-    width: 100vw;
-    align-items: center;
-    justify-items: center;
-  }
-  .testimonialscontainer {
-    background-color: #fafafa;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    width: 340px;
-    padding-block: 80;
-  }
-  .testimonialscoursels {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    gap: 32px;
-  }
-  .testimonialcard {
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-    gap: 24px;
-    padding: 56px;
-    background-color: white;
-    text-align: center;
-  }
-  .contactuscontainer {
-    background-color: #dcdcdc;
-    height: 700px;
-    width: 100vw;
-  }
-  .footercontainer {
-    background-color: #64b3a1;
-    width: 100vw;
-    height: 600px;
-  }
-  .testimonialsheader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    width: 340px;
-    text-align: center;
-  }
+
 }
 
-@media screen and (max-width: 768) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .herosection {
     background-color: #fbfbfb;
     display: flex;
@@ -1056,21 +972,11 @@
     width: 325px;
     align-content: center;
   }
-  .overlay-1 {
-    background: linear-gradient(0deg, transparent 62%, #ffffff 100%);
-    width: 700;
-    position: absolute;
-    height: 200px;
-    justify-self: center;
-    align-self: top;
-  }
-  .overlay-2 {
-    background: linear-gradient(0deg, #ffffff 0%, transparent 29%);
-    width: 700;
-    position: absolute;
-    height: 200px;
-    align-self: last baseline;
-  }
+   .heroleft h1{
+    font-size: 40px;
+    line-height: 48px;
+
+   }
 
   .heroright {
     display: flex;
@@ -1097,7 +1003,7 @@
     gap: 8px;
   }
 
-  .heroimage1 {
+  .heroimage1{
     width: 158px;
     height: 220px;
     display: flex;
@@ -1107,7 +1013,7 @@
     background-color: #64b3a1;
   }
 
-  .heroimage2 {
+  .heroimage2{
     background-color: antiquewhite;
     width: 158px;
     height: 220px;
@@ -1115,7 +1021,7 @@
     align-items: center;
     overflow: hidden;
   }
-  .heroimage3 {
+  .heroimage3{
     width: 158px;
     height: 144px;
     display: flex;
@@ -1134,7 +1040,7 @@
     align-items: center;
     overflow: hidden;
   }
-  .heroimage5 {
+  .heroimage5{
     width: 158px;
     height: 144px;
     display: flex;
@@ -1186,19 +1092,19 @@
     justify-content: space-between;
     width: 682px;
     align-items: center;
-    padding: 32px;
+    padding: 24px;
   }
 
   .ourmissioncontent {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 299.5px;
+    width: 298px;
     height: fit-content;
   }
-  .ourmissionimage {
+  .ourmissionimage{
     width: 299.5px;
-    height: 310px;
+    height: 304px;
     background-color: #fafafa;
     align-content: center;
     overflow: hidden;
@@ -1271,21 +1177,22 @@
     overflow: hidden;
   }
   .keybenefits {
-    display: ;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
   }
   .benefitcontent {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 240px;
+    width: fill;
     border-left: 4px solid #0c7a3e;
     padding-inline: 16px;
     padding-block: 24px;
   }
   .benefitcontent-2 {
-    width: 240px;
+    width: fill;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -1294,82 +1201,6 @@
     padding-block: 16px;
   }
 
-  .blogsection {
-    background-color: #fbfbfb;
-    width: 100vw;
-    align-items: center;
-    justify-items: center;
-  }
-  .blogcontainer {
-    padding-block: 80px;
-    display: flex;
-    gap: 32;
-    flex-direction: column;
-    background-color: #fbfbfb;
-    align-items: center;
-  }
-  .blogsectionheader {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-    width: 498px;
-  }
-
-  .slider {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 1336px;
-  }
-  .blogcard {
-    display: flex;
-    gap: 36;
-    background-color: white;
-    padding: 40px;
-    align-items: center;
-  }
-  .blogimage {
-    width: 610px;
-    height: 294px;
-    background-color: #64b3a1;
-  }
-  .blogcontent {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 610px;
-  }
-  .button {
-    padding-block: 16px;
-    padding-inline: 32px;
-    width: fit-content;
-    background-color: #64b3a1;
-    border: none;
-    font-size: 16px;
-  }
-  .slideraction {
-    display: flex;
-    gap: 16px;
-    justify-content: space-between;
-  }
-  .slides {
-    display: flex;
-    gap: 16px;
-  }
-
-  .slideactive {
-    width: 36px;
-    height: 8px;
-    background-color: #0c7a3e;
-  }
-  .slide {
-    width: 36px;
-    height: 8px;
-    background-color: #ededed;
-  }
   .servicessection {
     background-color: #fbfbfb;
     width: 100vw;
@@ -1388,7 +1219,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    width: 1336px;
+    width: 682px;
   }
   .servicesheading {
     width: 616px;
@@ -1411,10 +1242,10 @@
     padding: 32px;
     gap: 24px;
     display: flex;
-    flex-direction: column;
-    width: 614px;
+    flex-direction: row;
+    width: 698px;
     height: 360px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     align-items: center;
   }
   .serviceimage-1 {
@@ -1423,8 +1254,8 @@
     background-color: #f5f5f5;
   }
   .serviceimage-2 {
-    width: 550;
-    height: 184;
+    width: 282px;
+    height: 296px;
     background-color: #e2e2e2;
   }
 
@@ -1432,8 +1263,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    height: fill;
-    width: fill;
+    height: 100%;
+    width:fill;
     justify-content: space-between;
   }
 
@@ -1450,6 +1281,7 @@
   }
   .points-2 {
     display: flex;
+    flex-direction: column;
     gap: 16px;
   }
   .point {
@@ -1473,7 +1305,7 @@
   .calltoactioncontainer {
     background-color: #64b3a1;
     align-content: center;
-    width: 1336px;
+    width: 682px;
     height: 436px;
     justify-items: center;
   }
@@ -1493,7 +1325,7 @@
     width: fit-content;
     font-size: 18px;
   }
-  .testimonialssection {
+  /* .testimonialssection {
     background-color: #fbfbfb;
     width: 100vw;
     align-items: center;
@@ -1541,5 +1373,5 @@
     gap: 16px;
     width: 580px;
     text-align: center;
-  }
+  } */
 }
