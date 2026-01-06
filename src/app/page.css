@@ -835,23 +835,24 @@
     align-items: center;
   }
   .servicesheading {
-    width: 340px;
+    width: 342px;
     font-size: 24;
   }
   .servicesheader {
     display: flex;
+    gap: 16px;
     flex-direction: column!important;
     justify-content: center;
-    width: 340px !important;
-    text-align: center;
-    gap: 16 px;
+    width: 342px !important;
+    text-align: start;
+    
   }
   .servicecard-1 {
     padding: 16px;
     gap: 24px;
     display: flex;
     flex-direction: column;
-    width: 340px important;
+    width: 342px !important;
     height: fit-content !important;
     background-color: white;
     align-items: center;
@@ -861,18 +862,18 @@
     gap: 24px;
     display: flex;
     flex-direction: column !important;
-    width: 340px !important;
+    width: 342px !important;
     height: fit-content !important;
     background-color: white;
     align-items: center;
   }
   .serviceimage-1 {
-    width: 306px ;
+    width: 306px !important ;
     height: 296px ;
     background-color: #f5f5f5;
   }
   .serviceimage-2 {
-    width: 162px ;
+    width: 162px !important;
     height: 296px;
     background-color: #f2f2f2;
 
@@ -1222,18 +1223,18 @@
     width: 682px;
   }
   .servicesheading {
-    width: 616px;
+    width: 500px;
   }
   .servicesheader {
     display: flex;
     justify-content: space-between;
-    width: 1336px;
+    width: 682px;
   }
   .servicecard-1 {
     padding: 32px;
     gap: 24px;
     display: flex;
-    width: 698px;
+    width: 682px !important;
     height: 360px;
     background-color: white;
     align-items: center;
@@ -1243,7 +1244,7 @@
     gap: 24px;
     display: flex;
     flex-direction: row;
-    width: 698px;
+    width: 682px !important;
     height: 360px;
     background-color: rgb(255, 255, 255);
     align-items: center;

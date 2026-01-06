@@ -182,6 +182,14 @@ textarea {
   .contact-section {
     padding: 20px;
     width: 100vw;
+   
+  }
+
+  
+  
+
+  .contact-form {
+    width: 100%;
   }
 
   .form-heading {

@@ -10,6 +10,7 @@ import "./page.css";
 import BlogSlider from "@/components/common/blogslider";
 import TestimonialSlider from "@/components/common/TestimonialSlider";
 import { Search,Sparkles,Handshake,Lightbulb} from 'lucide-react';
+import Link from "next/link";
 
 export default function Home() {
   function greetings() {
@@ -32,7 +33,8 @@ export default function Home() {
                 eu malesuada. Auctor nunc lectus eget duis rhoncus placerat eget
                 faucibus.
               </p>
-              <Button text="Contact us" />
+              <Link href="/#contact-btn"><Button text="Contact Us" /></Link>
+              {/* <Button text="Contact us" /> */}
             </div>
             <div className="heroright">
               <div className="photosleft">
@@ -367,7 +369,7 @@ export default function Home() {
         </div>
         <TestimonialSlider />
 
-        <ContactSection />
+        <ContactSection id="contact-btn" />
 
       </div>
     </>
